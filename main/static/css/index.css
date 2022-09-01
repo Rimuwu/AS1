@@ -1,0 +1,135 @@
+*, *:before, *:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url(Comic Sans MS.ttf);
+}
+
+html, body {
+  height: 100%;
+  background: url(../images/bcg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100% auto;
+}
+
+.wrapper {
+  min-height:50vh;
+  display: flex;
+  z-index: 1;
+  /* min-width: 150px; */
+}
+
+.fullscreen{
+  min-height: 50vh;
+  background-color: rgb(198, 232, 236);
+  position: relative;
+  padding: 50px 50px;
+
+  box-shadow: 0 0px 20px rgba(40, 73, 105, 0.9);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.fullscreen__body{
+  width: 100%;
+}
+
+.fullscreen__title{
+  font-size: 50px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  color: rgb(76, 166, 223);
+
+  text-shadow: 2px 5px 5px rgb(123, 196, 236);
+}
+
+.fullscreen__title img {
+  height: 100px;
+}
+
+.rm_image{
+  height: 50%;
+  margin-bottom: -40px;
+  margin-right: 35px;
+  display: block;
+  margin-left: auto;
+  position: relative;
+  z-index: 0;
+  margin-top: 200px;
+  margin-right: 35px;
+}
+
+.panels{
+  height: 100%;
+  padding: 15px;
+
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+.fullscreen_panel{
+  background-color: rgb(137, 188, 226);
+  box-shadow: inset 2px 2px 5px rgba(77, 104, 124);
+  border-radius: 15px 15px 15px 15px;
+  width: 550px;
+  height: auto;
+  margin: auto;  /* отвечает за центрирование */
+
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+
+}
+
+.pl_image {
+  height: 120px;
+  position: absolute;
+}
+
+.fullscreen_panel_title {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.fullscreen_panel_text{
+  padding-left: 120px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.fullscreen__text{
+  font-size: 25px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 988px) {
+  /* Для телефона */
+
+  .fullscreen_panel_text{
+    font-size: 35px;
+    padding-left: 200px;
+  }
+
+  .fullscreen_panel{
+    width: 850px;
+    margin-bottom: 55px;
+  }
+
+  .pl_image {
+    height: 200px;
+  }
+
+  .fullscreen_panel_title {
+    font-size: 55px;
+  }
+
+}

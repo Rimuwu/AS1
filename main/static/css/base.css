@@ -1,0 +1,116 @@
+*, *:before, *:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url(Comic Sans MS.ttf);
+}
+
+
+html, body {
+  height: 100%;
+  background: url(../images/bcg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100% auto;
+}
+/* Для всего остального */
+
+header{
+  display: flex;
+  vertical-align: middle;
+}
+
+.all_header_menu{
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 0px 20px rgb(50, 69, 87);
+  border-radius: 0 0 15px 15px;
+  position: fixed;
+  z-index: 2;
+}
+
+.logo, .top_menu {
+  display: inline-block;
+}
+
+.logo {
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.logo h3{
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.top_menu a{
+  font-size: 20px;
+  color: black;
+  text-align: right;
+  margin-left: 15px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.top_menu a:hover {
+  color: rgb(137, 188, 226);
+}
+
+.top_menu li{
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 988px) {
+  /* Для телефона */
+
+  header{
+    text-align: center;
+  }
+
+  .logo, .top_menu {
+    display: inline;
+    text-align: center;
+  }
+
+  .logo h3{
+    font-size: 50px;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .top_menu a{
+    font-size: 40px;
+    color: black;
+    margin-left: 30px;
+  }
+
+}
+
+footer{
+  background-color: rgba(5, 38, 47, 0.80);
+  font-family: inherit;
+  padding-top: 10px;
+  vertical-align: middle;
+}
+
+.footer__body{
+  color: white;
+  text-align: center;
+  display: inline;
+  font-family: "Comic Sans MS", sans-serif;
+}

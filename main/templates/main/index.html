@@ -1,0 +1,137 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+
+{{ title }}
+
+{% endblock %}
+
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static "css/index.css" %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+    <!-- <h1>Главная страница</h1>
+    {% if tasks %}
+      {% for el in tasks %}
+
+          <div class="alert alert-warning mt-2">
+              <h3> {{ el.title }} </h3>
+              <p> {{ el.task }} </p>
+            </div>
+
+      {%  endfor %}
+
+    {% else %}
+      <p>/ - / Нет записей / - /</p>
+    {% endif %} -->
+
+
+    <div class="wapper">
+
+      <img src="{% static "images/rm.webp" %}" class="rm_image" data-rellax-speed="-4">
+
+      <section class="fullscreen">
+
+        <div class="fullscreen__body">
+
+          <div class="fullscreen__title">
+            <img src="{% static "images/rm.png" %}">
+            <b> Немного про меня... </b>
+          </div>
+
+          <div class="panels">
+
+            {% if notes %}
+              {% for el in notes %}
+
+                  <!-- <div class="alert alert-warning mt-2">
+                      <h3> {{ el.title }} </h3>
+                      <p> {{ el.task }} </p>
+                    </div> -->
+
+                  <div class="fullscreen_panel">
+
+                    <div class="fullscreen_panel_title">
+                         <b>{{ el.title }}</b>
+                    </div>
+
+                    {% if el.image %}
+
+                      <img class="pl_image" src="images/{{ el.image }}">
+
+                    {% endif %}
+
+                    <div class="fullscreen_panel_text">
+
+                      {% autoescape off %}{{ el.text }}{% endautoescape %}
+
+                    </div>
+
+                  </div>
+
+              {%  endfor %}
+
+            {% else %}
+
+            <div class="fullscreen__text">
+              <p>/ - / Нет записей / - /</p>
+            </div>
+
+            {% endif %}
+
+            <!-- <div class="fullscreen_panel">
+
+              <div class="fullscreen_panel_title">
+                   <b>📜 Основное</b>
+              </div>
+
+              <img class="pl_image" src="{% static "images/icon1.png" %}">
+
+              <div class="fullscreen_panel_text">
+
+                  <p>🎍 Меня зовут Арсений.</p>
+                  <p>🗻 Я 2006 года рождения.</p>
+                  <p>🧭 Очень люблю Японию и её культуру.</p>
+
+              </div>
+
+            </div> -->
+
+            <!-- <div class="fullscreen_panel">
+
+              <div class="fullscreen_panel_title">
+                   <b>🔥 Увлечения</b>
+              </div>
+
+              <img class="pl_image" src="{% static "images/icon1.png" %}">
+
+              <div class="fullscreen_panel_text">
+
+                  <p>🎍 Меня зовут Арсений.</p>
+                  <p>🗻 Я 2006 года рождения.</p>
+                  <p>🧭 Очень люблю Японию и её культуру.</p>
+                  <p>🧭 Очень люблю Японию и её культуру.</p>
+
+              </div>
+
+            </div> -->
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="{% static "js/index.js" %}"></script>
+
+{% endblock %}
