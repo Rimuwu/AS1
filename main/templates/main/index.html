@@ -17,22 +17,6 @@
 
 {% block content %}
 
-    <!-- <h1>Главная страница</h1>
-    {% if tasks %}
-      {% for el in tasks %}
-
-          <div class="alert alert-warning mt-2">
-              <h3> {{ el.title }} </h3>
-              <p> {{ el.task }} </p>
-            </div>
-
-      {%  endfor %}
-
-    {% else %}
-      <p>/ - / Нет записей / - /</p>
-    {% endif %} -->
-
-
     <div class="wapper">
 
       <img src="{% static "images/rm.webp" %}" class="rm_image" data-rellax-speed="-4">
@@ -50,11 +34,6 @@
 
             {% if notes %}
               {% for el in notes %}
-
-                  <!-- <div class="alert alert-warning mt-2">
-                      <h3> {{ el.title }} </h3>
-                      <p> {{ el.task }} </p>
-                    </div> -->
 
                   <div class="fullscreen_panel">
 
@@ -81,47 +60,12 @@
             {% else %}
 
             <div class="fullscreen__text">
+
               <p>/ - / Нет записей / - /</p>
+
             </div>
 
             {% endif %}
-
-            <!-- <div class="fullscreen_panel">
-
-              <div class="fullscreen_panel_title">
-                   <b>📜 Основное</b>
-              </div>
-
-              <img class="pl_image" src="{% static "images/icon1.png" %}">
-
-              <div class="fullscreen_panel_text">
-
-                  <p>🎍 Меня зовут Арсений.</p>
-                  <p>🗻 Я 2006 года рождения.</p>
-                  <p>🧭 Очень люблю Японию и её культуру.</p>
-
-              </div>
-
-            </div> -->
-
-            <!-- <div class="fullscreen_panel">
-
-              <div class="fullscreen_panel_title">
-                   <b>🔥 Увлечения</b>
-              </div>
-
-              <img class="pl_image" src="{% static "images/icon1.png" %}">
-
-              <div class="fullscreen_panel_text">
-
-                  <p>🎍 Меня зовут Арсений.</p>
-                  <p>🗻 Я 2006 года рождения.</p>
-                  <p>🧭 Очень люблю Японию и её культуру.</p>
-                  <p>🧭 Очень люблю Японию и её культуру.</p>
-
-              </div>
-
-            </div> -->
 
           </div>
 
