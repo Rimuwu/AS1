@@ -1,18 +1,6 @@
-*, *:before, *:after{
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Comic Sans MS";
-  src: url(Comic Sans MS.ttf);
-}
-
 html, body {
   height: 100%;
-  background: url(../images/bcg2.jpg);
+  background: url(../images/bcg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -71,16 +59,16 @@ html, body {
   padding: 15px;
 
   font-family: "Comic Sans MS", sans-serif;
-  color: white;
+  color: rgb(255, 243, 231);
 }
 
 .fullscreen_panel{
   background-color: rgb(137, 188, 226);
   box-shadow: inset 2px 2px 5px rgba(77, 104, 124);
-  border-radius: 15px 15px 15px 15px;
-  width: 550px;
+  border-radius: 15px 15px 15px 50px;
+  width: 600px;
   height: auto;
-  margin: auto;  /* отвечает за центрирование */
+  margin: auto;
 
   padding-bottom: 5px;
   margin-bottom: 25px;
@@ -120,7 +108,7 @@ html, body {
   }
 
   .fullscreen_panel{
-    width: 850px;
+    width: auto;
     margin-bottom: 55px;
   }
 

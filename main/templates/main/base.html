@@ -24,10 +24,33 @@
         <div class="top_menu">
 
           <ul>
-            <li><a href="{% url 'home' %}">Главная</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">Ссылки</a></li>
-            <li><a href="#">Мнение</a></li>
+
+            <li><a href="{% url 'home' %}">
+              <img src="{% static "images/home.svg" %}" class="menu_img"> Главная
+                </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="{% static "images/heart.svg" %}" class="menu_img">
+                Работы
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="{% static "images/user.svg" %}" class="menu_img">
+                Ссылки
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="{% static "images/apps.svg" %}" class="menu_img">
+                Уголок
+              </a>
+            </li>
+
           </ul>
 
         </div>
@@ -36,9 +59,7 @@
 
     </header>
 
-
     {% block content %} {% endblock %}
-
 
     <footer>
 
@@ -47,6 +68,8 @@
         <p>
           Создано мной на конструкторе сайтов <br> в 2022-ом году.
         </p>
+
+        <a href="/admin/">Админка</a>
 
       </div>
 
